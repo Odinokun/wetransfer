@@ -1,0 +1,15 @@
+extends ../_template
+
+block variables
+  - var title       = ''
+  - var description = ''
+
+block content
+  .main-wrap
+    include ../sections/header
+
+    //begin content
+    main.main
+    //end content
+
+    include ../sections/footer
