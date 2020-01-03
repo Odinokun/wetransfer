@@ -1,0 +1,100 @@
+
+.why-we__header {
+  background-image: linear-gradient(to right, #e31c93 0%, #673a8f 50%, #59c5f2 100%);
+  .container {
+    padding-top: 125px;
+    padding-bottom: 148px;
+  }
+}
+
+.why-we__items {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: -92px;
+  padding: 52px 35px 38px 35px;
+  background-color: #fff;
+
+  @include max(940) {
+    padding: 52px 15px 38px 15px;
+  }
+  @include max(860) {
+    justify-content: space-between;
+  }
+  @include max(760) {
+    justify-content: space-around;
+  }
+  &::before {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    content: '';
+    background-image: url('../img/bg-why-we-items.png');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+}
+
+.why-we__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  max-width: 180px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+
+  @include max(760) {
+    width: 50%;
+    max-width: 230px;
+  }
+  @include max(425) {
+    width: 100%;
+  }
+}
+
+.why-we__icon {
+  min-height: 95px;
+  margin: 0 auto;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.why-we__item--01 {
+  .why-we__icon {
+    width: 79px;
+  }
+}
+
+.why-we__item--02 {
+  .why-we__icon {
+    width: 76px;
+  }
+}
+
+.why-we__item--03 {
+  .why-we__icon {
+    width: 76px;
+  }
+}
+
+.why-we__item--04 {
+  .why-we__icon {
+    width: 68px;
+  }
+}
+
+.why-we__text {
+  font-family: $myriadpro-bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #673a8f;
+}

@@ -6,7 +6,7 @@
 
 html,
 body {
-  height: 100%;
+  //height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -97,6 +97,7 @@ svg {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #f2f2f2;
 }
 
 .main {
@@ -159,11 +160,9 @@ svg {
   font-size: 46px;
   line-height: 1.2;
   position: relative;
-  //margin-bottom: 0px;
   user-select: none;
   text-align: center;
   text-transform: uppercase;
-  color: #673a8f;
 
   @include max(640) {
     font-size: 38px;
@@ -187,4 +186,11 @@ svg {
     background-position: 50% 50%;
     background-size: contain;
   }
+}
+.section-header--violet{
+
+  color: #673a8f;
+}
+.section-header--white{
+  color: #ffffff;
 }
