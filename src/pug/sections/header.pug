@@ -1,4 +1,26 @@
-// begin header
-header.header(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 header
-// end header
+//begin header
+.header
+  .container
+    //begin header__menu
+    nav.header__menu.menu
+      include ../elements/burger
+
+      ul.menu__list#menu__list
+        li.menu__item
+          a(href="#about").menu__link Про компанію
+        li.menu__item
+          a(href="#why-we").menu__link.active Чому ми?
+        li.menu__item
+          a(href="#portfolio").menu__link Портфоліо
+        li.menu__item
+          a(href="#news").menu__link Новини
+        li.menu__item
+          a(href="#contacts").menu__link Контакти
+    //end header__menu
+
+    //begin header__language
+    .header__language.language
+      a(href="#").language__link ua
+      a(href="#").language__link eng
+    //end header__language
+//end header

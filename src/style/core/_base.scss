@@ -22,6 +22,9 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 h1,
@@ -35,56 +38,10 @@ p {
   margin: 0 0 10px 0;
 }
 
-h1 {
-  font-family: $font-bold;
-  font-size: 36px;
-}
-
-h2 {
-  font-family: $font-bold;
-  font-size: 32px;
-}
-
-h3 {
-  font-family: $font-bold;
-  font-size: 28px;
-}
-
-h4 {
-  font-family: $font-bold;
-  font-size: 24px;
-}
-
-h5 {
-  font-family: $font-bold;
-  font-size: 22px;
-}
-
-h6 {
-  font-family: $font-bold;
-  font-size: 20px;
-}
-
-p {
-  font-size: 16px;
-  strong {
-    font-family: $font-bold;
-  }
-}
-
-a {
-  transition: color .5s;
-  color: $highlight;
-  &:hover {
-    text-decoration: none;
-    color: $highlight-hov;
-  }
-}
-
 ol,
 ul {
   li {
-    padding: 3px 0;
+    padding: 0;
   }
 }
 
@@ -136,45 +93,10 @@ svg {
   overflow: visible;
 }
 
-// подсвечиваем картинки без alt и без заполненного alt
-img[alt=''],
-img:not([alt]) {
-  outline: 5px solid tomato;
-}
-
-// исключение для google-map и fancybox
-.fancybox-container img[alt=''],
-.fancybox-container img:not([alt]),
-.gm-style img[alt=''],
-.gm-style img:not([alt]) {
-  outline: none !important;
-}
-
-// тревога, если первый child внутри списка не li и прочие похожие примеры
-ul > *:not(li),
-ol > *:not(li) {
-  outline: 5px solid tomato;
-}
-
-//изменяем цвет выделения текста мышью
-::selection {
-  // background-color: $brand;
-  // color: $brand;
-  // text-shadow: none;
-}
-
 .main-wrap {
   display: flex;
   flex-direction: column;
-  height: 100%;
   min-height: 100vh;
-
-  //свойство для плавной прокрутки на яблоках
-
-  -webkit-overflow-scrolling: touch;
-  &.no-scroll {
-    overflow: hidden;
-  }
 }
 
 .main {
@@ -184,32 +106,85 @@ ol > *:not(li) {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 15px 30px;
+  padding: 0 60px;
 
-  @include max(768) {
-    padding: 10px 20px;
+  @include max(940) {
+    padding: 0 30px;
   }
+}
 
+.text-52 {
+  font-family: $geometria;
+  font-size: 52px;
+  font-weight: 400;
+  display: block;
+  letter-spacing: 5.1px;
+  text-transform: uppercase;
+  color: #191919;
+}
+
+.text-46 {
+  font-family: $geometria;
+  font-size: 46px;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.text-32 {
+  font-family: $geometria;
+  font-size: 32px;
+  font-weight: 400;
+  display: block;
+  color: #282828;
+}
+
+.text-24 {
+  font-family: $geometria;
+  font-size: 24px;
+  font-weight: 400;
+  display: block;
+  color: #191919;
+
+  @include max(640) {
+    font-size: 18px;
+  }
+}
+
+.section-header__title {
+  font-family: $geometria-bold;
+  font-size: 46px;
+  line-height: 1.2;
+  position: relative;
+  //margin-bottom: 0px;
+  user-select: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #673a8f;
+
+  @include max(640) {
+    font-size: 38px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
   @include max(425) {
-    padding: 10px;
+    font-size: 32px;
   }
-}
-
-// скрываем все слайды кроме первого
-// при отключенном JS
-// .slick-slide исправить на текущий класс
-.no-js .slick-slide:not(:first-child) {
-  display: none;
-}
-
-// скрываем слайдер до его инициализации
-// .card-slider-lg__list исправить на текущий класс
-.card-slider-lg__list {
-  visibility: hidden;
-}
-
-.card-slider-lg__list.slick-initialized {
-  visibility: visible;
+  &::before {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    margin: auto;
+    content: '';
+    background-image: url('../img/section-title-decor.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
 }

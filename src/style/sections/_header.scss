@@ -1,0 +1,133 @@
+.header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 67px;
+  }
+}
+
+//begin #MENU
+.menu {
+  z-index: 1;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  @include max(860) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+    transition: transform .5s ease-in-out;
+    transform: translateX(-100%);
+    background-color: $violet;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+.menu__item {
+  margin: 0;
+  padding: 0 21px;
+  list-style: none;
+
+  @include max(860) {
+    padding: 10px 0;
+  }
+  @include max(640) {
+    padding: 5px 0;
+  }
+}
+
+.menu__link {
+  font-family: $geometria;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: -.54px;
+  color: #fff;
+
+  @include max(860) {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  @include max(640) {
+    font-size: 20px;
+  }
+  &.active,
+  &:hover {
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+//end #MENU
+
+//begin #LANGUAGE
+.language {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 71px;
+  height: 11px;
+  margin: auto;
+
+  @include max(940) {
+    right: 30px;
+  }
+}
+
+.language__link {
+  font-family: $geometria;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 56px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -11px;
+    bottom: 0;
+    width: 2px;
+    height: 14px;
+    margin: auto;
+    content: '';
+    background-color: #fff;
+  }
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+//end #LANGUAGE

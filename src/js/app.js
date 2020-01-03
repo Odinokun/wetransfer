@@ -4,13 +4,13 @@ $(function() {
   require('./modules/svg4everybody')();
 
   // begin no-JS
-  require('./modules/noJs')();
+  require('./modules/menu')();
 
   // begin phone mask
   // require('./modules/maskedinput')();
 
   // begin Scroll2Ancor
-  // require('./modules/scroll2ancor')();
+  require('./modules/scroll2ancor')();
 
   // begin Slick slider
   // require('./modules/slick')();

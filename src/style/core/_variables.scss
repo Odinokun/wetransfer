@@ -6,15 +6,26 @@ $light: #f5f5f5;
 $highlight: #f6882b;
 $highlight-hov: #f2a621;
 
+
+$violet: #673a8f;
+$lilac: #e31c93;
+$blue: #59c5f2;
+$grey-dark: #565655;
+$grey-light: #808080;
+
+$gradient-lilac-violet: linear-gradient(to left, #673a8f 0%, #e31c93 100%);
+$gradient-blue-violet: linear-gradient(to left, #59c5f2 0%, #673a8f 100%);
+$gradient-lilac-blue: linear-gradient(to right, #e31c93 0%, #673a8f 50%, #59c5f2 100%);
+
+
 // ***** text colors *******
 $text: #646464;
 $title: #141414;
 
 // ===== fonts =====
-$font:            'OpenSans', sans-serif;
-$font-bold:       'OpenSans-Bold', sans-serif;
-$font-light:      'OpenSans-Light', sans-serif;
-$font-semibold:   'OpenSans-Semibold', sans-serif;
+$font:            'Geometria', sans-serif;
+$geometria:       'Geometria', sans-serif;
+$geometria-bold:  'Geometria-Bold', sans-serif;
+$myriadpro:       'MyriadPro-Regular', sans-serif;
+$font-semibold:   'MyriadPro-Bold', sans-serif;
 
-// ===== sizes =====
-$radius-btn: 6px;
