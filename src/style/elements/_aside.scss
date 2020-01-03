@@ -1,0 +1,68 @@
+.aside {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  padding: 40px 50px;
+  transition: transform .5s ease-in-out;
+  transform: translate(-150%, -50%);
+  background-color: #fff;
+  box-shadow: 7px 12px 18px rgba(103, 58, 143, .1);
+  &.active {
+    transform: translate(-100%, -50%);
+  }
+  &:hover{
+    transform: translate(0, -50%);
+  }
+}
+
+.aside__burger {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  width: 40px;
+  height: 160px;
+  cursor: pointer;
+  background-image: url('../img/aside-burger.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+.aside__logo {
+  display: block;
+  width: 123px;
+  height: 68px;
+  margin: 0 auto 40px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.aside-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.aside-nav__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aside-nav__link {
+  font-family: $geometria;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: none;
+  color: #565655;
+  &:hover {
+    color: transparent;
+    background-image: linear-gradient(to left, #673a8f 0%, #e31c93 100%);
+    -webkit-background-clip: text;
+  }
+}

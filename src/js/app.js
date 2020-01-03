@@ -12,6 +12,9 @@ $(function() {
   // begin Scroll2Ancor
   require('./modules/scroll2ancor')();
 
+  // begin aside
+  require('./modules/aside')();
+
   // begin Slick slider
   // require('./modules/slick')();
 

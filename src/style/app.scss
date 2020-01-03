@@ -9,8 +9,8 @@
 @import 'elements/burger';
 //@import 'elements/pagination';
 //@import 'elements/popup';
-//@import 'elements/slickBase';
-// @import 'elements/stickyHeader';
+@import 'elements/slickBase';
+@import 'elements/aside';
 
 //section
 @import 'sections/footer';
@@ -18,6 +18,7 @@
 @import 'sections/top-section';
 @import 'sections/about';
 @import 'sections/why-we';
+@import 'sections/portfolio';
 
 //pages
 @import 'pages/index';
