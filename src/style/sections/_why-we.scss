@@ -1,6 +1,9 @@
 
 .why-we__header {
-  background-image: linear-gradient(to right, #e31c93 0%, #673a8f 50%, #59c5f2 100%);
+  background-image: url('../img/bg-why-we.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   .container {
     padding-top: 125px;
     padding-bottom: 148px;

@@ -187,10 +187,27 @@ svg {
     background-size: contain;
   }
 }
-.section-header--violet{
 
+.section-header--violet {
   color: #673a8f;
 }
-.section-header--white{
-  color: #ffffff;
+
+.section-header--white {
+  color: #fff;
+}
+
+.white-decor {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  display: block;
+  width: 200px;
+  height: 0;
+  border-top: 14px solid #f2f2f2;
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
+
+  @include max(940) {
+    left: 30px;
+  }
 }
