@@ -2,13 +2,26 @@ module.exports = function() {
 
   // begin Slick slider
 
-  $('.slick').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
+  $('.slider-top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
     fade: true,
-    autoplay: true,
-    cssEase: 'linear'
+    asNavFor: '.slider-bottom',
+    draggable: false
+  });
+
+  $('.slider-bottom').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-top',
+    centerMode: true,
+    focusOnSelect: true
+  });
+
+  $('.channel-slider').slick({
+    arrows: false,
+    dots: true
   });
 
   // end Slick slider

@@ -1,0 +1,36 @@
+mixin news-item(title, pic, text)
+  //begin news-item
+  .news__item.news-item
+    .news-item__top
+      .news-item__date
+        time(datetime="2019-12-09") 09.12.2019
+      h3.news-item__title #{title}
+
+    .news-item__img
+      img(src="assets/img/news-preview-" + pic + ".jpg" alt="picture")
+
+    .news-item__bottom
+      .news-item__descr
+        p #{text}
+
+      a(href="article.html").news-item__link Детальніше
+  //end news-item
+
+
+//begin news
+.news#news
+  .container
+    .news__header.section-header.section-header--violet
+      h2.section-header__title Новини
+
+    //begin news__items
+    .news__items
+      +news-item('AMC Ukraine & The Baltics - Новинки', '01', 'Другий сезон “The Son” завершує подорож культового завершує подорож культового')
+      +news-item('FOX Highlights', '02', 'Декс Паріос працює приватним детективом в Портленді, штат Орегон детективом в Портленді, штат Орегон')
+      +news-item('NatGeo WILD Highlights', '03', 'Ви познайомитеся з таємничою дикою природою Китаю з таємничою дикою природою Китаю')
+      +news-item('Контент каналу розроблений', '04', 'FOX Networks Group найулюбленіший та найвпізнаваніший найулюбленіший та найвпізнаваніший')
+    //end news__items
+
+    .news__footer
+      a(href="all-news.html").news__btn Всі новини
+//end news

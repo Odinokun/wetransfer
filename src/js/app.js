@@ -16,7 +16,10 @@ $(function() {
   require('./modules/aside')();
 
   // begin Slick slider
-  // require('./modules/slick')();
+  require('./modules/slick')();
+
+  // begin 3 dots
+  require('./modules/dots')();
 
   // begin Popup
   // require('./modules/popup')();

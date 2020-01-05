@@ -9,9 +9,12 @@
   position: relative;
   list-style: none;
   &::after {
-    font-size: 12px;
-    margin: 0 3px 0 4px;
-    content: '/';
+    font-family: $geometria;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 4px 0 5px;
+    content: '>';
+    color: #808080;
   }
   &:last-child {
     .breadcrumbs__link {
@@ -25,10 +28,15 @@
 }
 
 .breadcrumbs__link {
-  font-size: 12px;
+  font-family: $geometria;
+  font-size: 14px;
+  line-height: 14px;
   white-space: nowrap;
-  color: #403549;
+  text-decoration: none;
+  color: #808080;
   &:hover {
-    text-decoration: none;
+    color: transparent;
+    background-image: linear-gradient(to left, #673a8f 0%, #e31c93 100%);
+    -webkit-background-clip: text;
   }
 }

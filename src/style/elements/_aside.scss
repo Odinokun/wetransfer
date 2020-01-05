@@ -1,6 +1,7 @@
 .aside {
   position: fixed;
   top: 50%;
+  z-index: 5;
   left: 0;
   padding: 40px 50px;
   transition: transform .5s ease-in-out;
@@ -10,7 +11,7 @@
   &.active {
     transform: translate(-100%, -50%);
   }
-  &:hover{
+  &:hover {
     transform: translate(0, -50%);
   }
 }

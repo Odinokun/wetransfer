@@ -1,0 +1,143 @@
+.footer {
+  background-image: url('../img/bg-top-slider.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  .container {
+    display: flex;
+    align-items: stretch;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include max(640) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.footer__logo-link {
+  display: flex;
+  align-items: center;
+  flex: none;
+  width: 194px;
+  height: 100%;
+  padding: 0 20px;
+
+  @include max(640) {
+    margin-bottom: 50px;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer__right {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding-right: 10px;
+  padding-left: 50px;
+
+  @include max(940) {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  @include max(640) {
+    flex: inherit;
+    max-width: 330px;
+    padding-left: 0;
+  }
+}
+
+.contacts {
+  padding-right: 20px;
+
+  @include max(640) {
+    padding-right: 0;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+
+  @include max(940) {
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    font-family: $geometria;
+    font-size: 18px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.contacts__icon {
+  display: flex;
+  justify-content: center;
+  flex: none;
+  width: 20px;
+  margin-right: 20px;
+  svg {
+    fill: #fff;
+    max-width: 100%;
+    max-height: 22px;
+  }
+}
+
+.copyright {
+  display: flex;
+  height: auto;
+  //margin-left: auto;
+}
+
+.copyright__row {
+  display: flex;
+  margin-top: auto;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+  background-image: linear-gradient(to right, #bd2591 0%, #68398f 100%);
+  &:hover {
+    background-image: linear-gradient(to right, #dc1e93 0%, #81338f 100%);
+  }
+
+  svg {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.copyright__text {
+  padding-left: 20px;
+  span {
+    font-family: $geometria;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    letter-spacing: -.14px;
+    color: #fff;
+  }
+}

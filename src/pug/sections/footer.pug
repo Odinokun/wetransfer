@@ -1,4 +1,41 @@
 //begin footer
-footer.footer(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 footer
+.footer#contacts
+  .container
+    span.white-decor
+
+    //begin footer__logo
+    .footer__logo
+      a(href="/").footer__logo-link
+        img(src="assets/img/logo-footer.png" alt="viamedia")
+    //end footer__logo
+
+    //begin footer__right
+    .footer__right
+      //begin footer__contacts
+      .footer__contacts.contacts
+        .contacts__list
+          .contacts__item
+            .contacts__icon
+              +svg('phone')
+            a(href="tel:+380443649475") +38 (044) 364 94 75
+          .contacts__item
+            .contacts__icon
+              +svg('mail')
+            a(href="mailto:viamedia@viamedia.tv") viamedia@viamedia.tv
+          .contacts__item
+            .contacts__icon
+              +svg('marker')
+            a(href="https://goo.gl/maps/suWLEirXcZcybkag6" target="_blank" rel="nofollow noopener noreferrer") 02094, м. Київ, вул. Магнітогорська 1, 4 пов., FIM CENTER, ТОВ «Віа Медіа»
+      //end footer__contacts
+
+      //begin footer__copyright
+      .footer__copyright.copyright
+        .copyright__row
+          a(href="https://drive.google.com/file/d/1djmfaciKEGsZOdTMdcTjev40zDr9ohHH/view" target='_blank').copyright__link
+            +svg('download')
+          .copyright__text
+            span Структура властності
+            span ТОВ «Віа Медіа» за 2019 рік
+      //end footer__copyright
+    //end footer__right
 //end footer

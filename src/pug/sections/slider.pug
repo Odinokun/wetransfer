@@ -1,0 +1,106 @@
+mixin slider-top__item-left(pic, text01,  text02,  text03)
+  .slider-top__item-left.left-slide
+    .left-slide__logo
+      img(src="assets/img/descr-logo-" + pic + ".png" alt="logo")
+    .left-slide__text
+      p #{text01}
+      p #{text02}
+      //-p #{text03}
+
+
+
+//begin slider-section
+.slider-section
+  .slider-top-row
+    .container
+      span.white-decor
+
+      .slider-top
+        //begin slider-top__item--fox
+        .slider-top__item
+          +slider-top__item-left('02', 'FOX Networks Group найулюбленіший та найвпізнаваніший бренд представлений кіносеріальними каналами FOX та FOX Life, а також у високій чіткості FOX HD та FOX Life HD.', 'В пізнавальній тематиці компанія пропонує канали National Geographic та Nat Geo Wild, а також National Geographic HD та Nat Geo Wild HD', 'А для найменших глядачів - Baby TV. Контент каналу розроблений експертами з розвитку дитини. ')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel
+                  img(src="assets/img/fox-01.png" alt="picture")
+                .channel-slider__channel
+                  img(src="assets/img/fox-02.png" alt="picture")
+                .channel-slider__channel
+                  img(src="assets/img/fox-03.png" alt="picture")
+                .channel-slider__channel
+                  img(src="assets/img/fox-04.png" alt="picture")
+
+              .channel-slider__slide
+                .channel-slider__channel
+                  img(src="assets/img/fox-05.png" alt="picture")
+                .channel-slider__channel
+                  img(src="assets/img/fox-06.png" alt="picture")
+                .channel-slider__channel
+                  img(src="assets/img/fox-07.png" alt="picture")
+                .channel-slider__channel
+                  img(src="assets/img/fox-08.png" alt="picture")
+
+              .channel-slider__slide
+                .channel-slider__channel
+                  img(src="assets/img/fox-09.png" alt="picture")
+            //end right-slide__slider
+
+
+        //end slider-top__item--fox
+
+
+
+
+
+
+        .slider-top__item
+          h1 AMC
+
+
+        .slider-top__item
+          h1 SPI
+        .slider-top__item
+          h1 TURNER
+        .slider-top__item
+          h1 Xsport
+        .slider-top__item
+          h1 AMC
+        .slider-top__item
+          h1 FOX
+        .slider-top__item
+          h1 SPI
+        .slider-top__item
+          h1 TURNER
+        .slider-top__item
+          h1 Xsport
+
+  //begin slider-bottom-row
+  .slider-bottom-row
+    .container
+      //begin slider-bottom
+      .slider-bottom
+        .slider-bottom__item
+          img(src="assets/img/logo-01.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-02.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-03.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-04.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-05.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-01.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-02.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-03.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-04.png" alt="logo")
+        .slider-bottom__item
+          img(src="assets/img/logo-05.png" alt="logo")
+      //end slider-bottom
+  //end slider-bottom-row
+//end slider-section
