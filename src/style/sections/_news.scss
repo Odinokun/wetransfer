@@ -17,7 +17,7 @@
 .news__items {
   display: flex;
   width: calc(100% + 20px);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   @include max(1079) {
     justify-content: space-between;
@@ -78,12 +78,15 @@
   font-family: $geometria-bold;
   font-size: 16px;
   line-height: 20px;
+  display: block;
   margin-bottom: 0;
+  text-decoration: none;
   text-transform: uppercase;
   color: #673a8f;
 }
 
 .news-item__img {
+  display: block;
   margin-top: auto;
   img {
     display: block;

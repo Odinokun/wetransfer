@@ -1,0 +1,155 @@
+.article__top-pic {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include max(760) {
+    height: 450px;
+  }
+  @include max(555) {
+    height: 350px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.article {
+  .container {
+    width: 90%;
+    max-width: 960px;
+    padding-right: 80px;
+    padding-left: 80px;
+    transform: translateY(-60px);
+    background-color: #fff;
+    box-shadow: 8px 13px 30px rgba(128, 128, 128, .15);
+
+    @include max(940) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    @include max(760) {
+      width: 85%;
+    }
+    @include max(425) {
+      width: 95%;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  .breadcrumbs {
+    margin-bottom: 47px;
+  }
+}
+
+.article__decor {
+  display: block;
+  width: 200px;
+  height: 15px;
+  margin-bottom: 15px;
+  background-image: url('../img/news-top-decor.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+}
+
+.article__date {
+  font-family: $geometria-bold;
+  font-size: 18px;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  color: #565655;
+}
+
+.article__title {
+  font-family: $geometria-bold;
+  font-size: 46px;
+  line-height: .9;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  color: #673a8f;
+
+  @include max(860) {
+    font-size: 40px;
+  }
+  @include max(555) {
+    font-size: 30px;
+  }
+}
+
+.article__subtitle {
+  font-family: $geometria;
+  font-size: 32px;
+  line-height: 50px;
+  display: block;
+  color: #673a8f;
+
+  @include max(860) {
+    font-size: 26px;
+  }
+  @include max(555) {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+.article__body {
+  padding-top: 43px;
+  padding-bottom: 20px;
+}
+
+.article-row {
+  display: flex;
+  margin-bottom: 30px;
+
+  @include max(760) {
+    flex-direction: column;
+  }
+}
+
+.article__pic {
+  flex: none;
+  width: 290px;
+
+  @include max(760) {
+    margin-bottom: 30px;
+  }
+  @include max(425) {
+    width: 100%;
+    max-width: 290px;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.article__text {
+  padding-left: 20px;
+
+  @include max(760) {
+    padding-left: 0;
+  }
+  p {
+    font-family: $geometria;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: -.15px;
+    color: #565655;
+  }
+}
+
+.article__text-title {
+  font-family: $geometria-bold;
+  margin-bottom: 17px;
+  transform: translateY(-5px);
+  letter-spacing: -.7px;
+  text-transform: uppercase;
+  color: #565655;
+}

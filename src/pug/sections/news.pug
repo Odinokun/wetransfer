@@ -4,9 +4,9 @@ mixin news-item(title, pic, text)
     .news-item__top
       .news-item__date
         time(datetime="2019-12-09") 09.12.2019
-      h3.news-item__title #{title}
+      a(href="article.html").news-item__title #{title}
 
-    .news-item__img
+    a(href="article.html").news-item__img
       img(src="assets/img/news-preview-" + pic + ".jpg" alt="picture")
 
     .news-item__bottom
@@ -18,10 +18,10 @@ mixin news-item(title, pic, text)
 
 
 //begin news
-.news#news
+.news
   .container
     .news__header.section-header.section-header--violet
-      h2.section-header__title Новини
+      h2.section-header__title#news Новини
 
     //begin news__items
     .news__items

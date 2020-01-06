@@ -22,17 +22,6 @@ $(function() {
   require('./modules/dots')();
 
   // begin Popup
-  // require('./modules/popup')();
-
-  // begin Sticky header
-  // require('./modules/stickyHeader')();
-
-  // begin Animate.css
-  //РАБОТАЕТ ТОЛЬКО С JQUERY < 3.0.0 !!!!!!!!!!!!!!!!!!
-  // require('./modules/waypoints')();
-  // require('./modules/animateCss')();
-
-  // begin Fancybox3
-  // require('./modules/fancybox')();
+  require('./modules/popup')();
 
 });

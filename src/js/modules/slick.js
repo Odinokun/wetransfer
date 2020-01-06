@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function () {
 
   // begin Slick slider
 
@@ -8,7 +8,10 @@ module.exports = function() {
     arrows: false,
     fade: true,
     asNavFor: '.slider-bottom',
-    draggable: false
+    draggable: false,
+    swipe:false,
+    swipeToSlide:false,
+    touchMove:false
   });
 
   $('.slider-bottom').slick({
@@ -16,7 +19,28 @@ module.exports = function() {
     slidesToScroll: 1,
     asNavFor: '.slider-top',
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 941,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 761,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 556,
+        settings: {
+          centerMode: false,
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 
   $('.channel-slider').slick({

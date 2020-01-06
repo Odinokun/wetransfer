@@ -4,6 +4,13 @@
   background-position: 50% 50%;
   background-size: cover;
 
+  @include max(760) {
+    height: 450px;
+  }
+  @include max(555) {
+    height: 350px;
+  }
+
   img {
     display: block;
     width: 100%;
@@ -31,7 +38,7 @@
   flex-wrap: wrap;
   width: calc(100% + 20px);
   margin: 0 auto;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
   transform: translateX(0px);
 
   @include max(1079) {

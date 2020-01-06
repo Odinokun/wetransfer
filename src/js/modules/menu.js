@@ -8,6 +8,7 @@ module.exports = function () {
 
   $('.menu__link').on('click', function () {
     $('#burger, #menu__list').toggleClass('active');
+    $('body').removeClass('no-scroll');
   });
   // end menu & burger
 

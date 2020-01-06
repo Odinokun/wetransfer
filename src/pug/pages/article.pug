@@ -1,0 +1,73 @@
+extends ../_template
+
+block variables
+  - var title       = 'Viamedia'
+  - var description = 'Viamedia'
+
+block content
+  .main-wrap
+    include ../elements/aside
+
+    //begin content
+    main.main
+      //begin article__top-pic
+      .article__top-pic(style='background-image:url("assets/img/bg-article.jpg");')
+      //end article__top-pic
+
+      //begin article
+      .article
+        .container
+          span.article__decor
+
+          //begin breadcrumbs
+          .breadcrumbs
+            ul.breadcrumbs__list
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") Головна
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="all-news.html") Новини
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") В пізнавальній тематиці
+          //end breadcrumbs
+
+          //begin article__header
+          .article__header
+            .article__date
+              time(datetime="2019-09-08") 08.09.2019
+            h2.article__title NatGeo WILD Highlights
+            span.article__subtitle Січень 2020
+          //end article__header
+
+          //begin article__body
+          .article__body
+            .article-row
+              .article__pic
+                img(src="assets/img/article-01.jpg" alt="picture")
+              .article__text
+                h3.article__text-title Загублене царство Китаю
+                p Прем’єра 5 січня
+                p Серіал «Загублені царства Китаю», користуючись унікальною можливістю знайомства з найбільш населеною країною світу, переносить глядачів у п'ять дуже різних регіонів - від високих гір, тропічних джунглів і бамбукових лісів, до неозорих степів і лісів середньої смуги. «Зірками» цих царств є самі харизматичні і культові тварини Китаю - сніжний барс, велика панда, лисиця Тибету, золотиста кирпата мавпа і цілий калейдоскоп дивовижних мешканців джунглів
+
+            .article-row
+              .article__pic
+                img(src="assets/img/article-02.jpg" alt="picture")
+              .article__text
+                h3.article__text-title ХиЖАКИ АФРИКИ 4
+                p Прем’єра 5 січня
+                p Африканський континент є домом для одних з найбільш спритних і небезпечних хижаків в світі. Тут ніхто не може почувати себе в безпеці у воді, в степу або в лісі. Хижаки Африки завжди в русі, і вони завжди голодні. Для найкращих африканських мисливців залишатися на самому верху - означає бути швидше, сильніше і хитріше, ніж їхні жертви і вороги. Вони озброєні потужними щелепами, кігтями і навіть своєрідним хімічною зброєю ...
+
+            .article-row
+              .article__pic
+                img(src="assets/img/article-03.jpg" alt="picture")
+              .article__text
+                h3.article__text-title ДИКА МІСЦЕВІСТЬ ТАЙЛАНДУ
+                p «Дикі місця Таїланду» - це двосерійний проект, в якому беруть участь різні персонажі тваринного світу, що живуть в різних ландшафтах. У серії «Мисливські ігри» тварини зустрічаються з одвічним викликом: добування їжі. Вони беруть участь в смертельних сутичках або полюючи за здобиччю, або рятуючись від іклів і пазурів своїх переслідувачів. У серії «Шлюбні ігри» ви побачите як тварини на межі можливостей домагаються найкращого для себе партнера, щоб виконати своє надзавдання - продовження роду
+          //end article__body
+      //end article
+
+
+
+
+    //end content
+
+    include ../sections/footer

@@ -5,76 +5,235 @@ mixin slider-top__item-left(pic, text01,  text02,  text03)
     .left-slide__text
       p #{text01}
       p #{text02}
-      //-p #{text03}
+      p #{text03}
 
 
 
 //begin slider-section
 .slider-section
+  //begin slider-top-row
   .slider-top-row
     .container
       span.white-decor
+        a(href="https://drive.google.com/file/d/1djmfaciKEGsZOdTMdcTjev40zDr9ohHH/view" target='_blank').download-portfolio
+          +svg('download')
+          span Завантажити портфоліо
 
+      //begin slider-top
       .slider-top
-        //begin slider-top__item--fox
+        //begin slider-top__item-amc
+        .slider-top__item
+          +slider-top__item-left('01', 'Програмна сітка каналу – це 24 години мовлення на день, 7 днів на тиждень.' , '2 вечора щотижня високоякісний, оригінальний сценарій драматичного серіалу.', 'Покази класичних, всесвітньо-відомих кінофільмів, а також випуски незначних незалежних розповсюджувачів.')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#amc-01')
+                  img(src="assets/img/amc-01.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-amc
+
+        //begin slider-top__item-fox
         .slider-top__item
           +slider-top__item-left('02', 'FOX Networks Group найулюбленіший та найвпізнаваніший бренд представлений кіносеріальними каналами FOX та FOX Life, а також у високій чіткості FOX HD та FOX Life HD.', 'В пізнавальній тематиці компанія пропонує канали National Geographic та Nat Geo Wild, а також National Geographic HD та Nat Geo Wild HD', 'А для найменших глядачів - Baby TV. Контент каналу розроблений експертами з розвитку дитини. ')
           .slider-top__item-right.right-slide
             //begin right-slide__slider
             .right-slide__slider.channel-slider
               .channel-slider__slide
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-01.png" alt="picture")
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-02.png" alt="picture")
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-03.png" alt="picture")
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-04.png" alt="picture")
 
               .channel-slider__slide
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-05.png" alt="picture")
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-06.png" alt="picture")
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-07.png" alt="picture")
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-08.png" alt="picture")
 
               .channel-slider__slide
-                .channel-slider__channel
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
                   img(src="assets/img/fox-09.png" alt="picture")
             //end right-slide__slider
+        //end slider-top__item-fox
 
-
-        //end slider-top__item--fox
-
-
-
-
-
-
+        //begin slider-top__item-spi
         .slider-top__item
-          h1 AMC
+          +slider-top__item-left('03', 'Глобальна медіа-компанія, що управляє 40 телеканалами на 6 континентах.', 'Працюючи з понад 1400 операторами по всьому світу, SPI використовує найсучасніші технології, забезпечуючи своїм 60-мільйонним підписникам доступ до лінійного SPI та контенту на вимогу.', 'Понад 25 років SPI International є провідним постачальником театральних фільмів та телевізійних програм на міжнародному ринку.')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-01.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-02.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-03.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-04.png" alt="picture")
 
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-05.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-06.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-07.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-08.png" alt="picture")
 
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-09.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-10.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-spi
+
+        //begin slider-top__item-turner
         .slider-top__item
-          h1 SPI
+          +slider-top__item-left('04', 'Turner Broadcasting System  – американська медіакомпанія, що володіє дитячими телеканалами Cartoon Network та Boomerang, і відома дітям всього світу, зокрема, такими персонажами як Том і Джеррі.', 'Компанія також володіє одним з найбільших новинних телеканалів у світі – CNN.', '')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#turner-01')
+                  img(src="assets/img/turner-01.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#turner-01')
+                  img(src="assets/img/turner-02.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#turner-01')
+                  img(src="assets/img/turner-03.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-turner
+
+        //begin slider-top__item-xsport
         .slider-top__item
-          h1 TURNER
+          +slider-top__item-left('05', 'Телеканал XSPORT присвячений спорту і здоровому способу життя. Ідеологія каналу - український спорт, всі його межі та прояви, герої і проблеми.', 'Трансляції топових подій національних чемпіонатів з хокею, баскетболу, гандболу, футзалу, волейболу.', 'Кращі вечора боксу за участю українських спортсменів, Всесвітня боксерська супер-серія і MMA')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#xsport-01')
+                  img(src="assets/img/xsport-01.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-xsport
+
+        //begin slider-top__item-amc
         .slider-top__item
-          h1 Xsport
+          +slider-top__item-left('01', 'Програмна сітка каналу – це 24 години мовлення на день, 7 днів на тиждень.' , '2 вечора щотижня високоякісний, оригінальний сценарій драматичного серіалу.', 'Покази класичних, всесвітньо-відомих кінофільмів, а також випуски незначних незалежних розповсюджувачів.')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#amc-01')
+                  img(src="assets/img/amc-01.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-amc
+
+        //begin slider-top__item-fox
         .slider-top__item
-          h1 AMC
+          +slider-top__item-left('02', 'FOX Networks Group найулюбленіший та найвпізнаваніший бренд представлений кіносеріальними каналами FOX та FOX Life, а також у високій чіткості FOX HD та FOX Life HD.', 'В пізнавальній тематиці компанія пропонує канали National Geographic та Nat Geo Wild, а також National Geographic HD та Nat Geo Wild HD', 'А для найменших глядачів - Baby TV. Контент каналу розроблений експертами з розвитку дитини. ')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-01.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-02.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-03.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-04.png" alt="picture")
+
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-05.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-06.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-07.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-08.png" alt="picture")
+
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#fox-01')
+                  img(src="assets/img/fox-09.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-fox
+
+        //begin slider-top__item-spi
         .slider-top__item
-          h1 FOX
+          +slider-top__item-left('03', 'Глобальна медіа-компанія, що управляє 40 телеканалами на 6 континентах.', 'Працюючи з понад 1400 операторами по всьому світу, SPI використовує найсучасніші технології, забезпечуючи своїм 60-мільйонним підписникам доступ до лінійного SPI та контенту на вимогу.', 'Понад 25 років SPI International є провідним постачальником театральних фільмів та телевізійних програм на міжнародному ринку.')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-01.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-02.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-03.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-04.png" alt="picture")
+
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-05.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-06.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-07.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-08.png" alt="picture")
+
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-09.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#spi-01')
+                  img(src="assets/img/spi-10.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-spi
+
+        //begin slider-top__item-turner
         .slider-top__item
-          h1 SPI
+          +slider-top__item-left('04', 'Turner Broadcasting System  – американська медіакомпанія, що володіє дитячими телеканалами Cartoon Network та Boomerang, і відома дітям всього світу, зокрема, такими персонажами як Том і Джеррі.', 'Компанія також володіє одним з найбільших новинних телеканалів у світі – CNN.', '')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#turner-01')
+                  img(src="assets/img/turner-01.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#turner-01')
+                  img(src="assets/img/turner-02.png" alt="picture")
+                .channel-slider__channel.popup-open(data-popup='#turner-01')
+                  img(src="assets/img/turner-03.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-turner
+
+        //begin slider-top__item-xsport
         .slider-top__item
-          h1 TURNER
-        .slider-top__item
-          h1 Xsport
+          +slider-top__item-left('05', 'Телеканал XSPORT присвячений спорту і здоровому способу життя. Ідеологія каналу - український спорт, всі його межі та прояви, герої і проблеми.', 'Трансляції топових подій національних чемпіонатів з хокею, баскетболу, гандболу, футзалу, волейболу.', 'Кращі вечора боксу за участю українських спортсменів, Всесвітня боксерська супер-серія і MMA')
+          .slider-top__item-right.right-slide
+            //begin right-slide__slider
+            .right-slide__slider.channel-slider
+              .channel-slider__slide
+                .channel-slider__channel.popup-open(data-popup='#xsport-01')
+                  img(src="assets/img/xsport-01.png" alt="picture")
+            //end right-slide__slider
+        //end slider-top__item-xsport
+      //end slider-top
+  //end slider-top-row
 
   //begin slider-bottom-row
   .slider-bottom-row
