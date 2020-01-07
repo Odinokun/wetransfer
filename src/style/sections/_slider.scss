@@ -161,10 +161,10 @@
     height: 360px;
   }
   @include max(490) {
-    height: 440px;
+    height: 880px;
   }
   @include max(375) {
-    height: 360px;
+    height: 720px;
   }
 }
 

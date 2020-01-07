@@ -49,10 +49,12 @@
 
 .popup__img {
   margin: 0 auto 30px;
+  max-width: 100%;
   img {
     display: block;
     max-width: 250px;
     margin: 0 auto;
+    width: 100%;
   }
 }
 
