@@ -79,7 +79,7 @@
   a {
     font-family: $geometria;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 23px;
     display: block;
     text-decoration: none;
     color: #fff;
@@ -101,13 +101,14 @@
 
 .copyright {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: auto;
-  //margin-left: auto;
 }
 
 .copyright__row {
   display: flex;
-  margin-top: auto;
+  margin-top: 15px;
 }
 
 .copyright__link {

@@ -17,7 +17,7 @@ module.exports = [
   './gulp/tasks/copy.css.js',
   './gulp/tasks/copy.fonts.js',
   './gulp/tasks/copy.video.js',
-  './gulp/tasks/copy.php.js',
+  './gulp/tasks/copy.pdf.js',
 
   './gulp/tasks/clean.js',
 

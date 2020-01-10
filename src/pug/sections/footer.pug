@@ -17,7 +17,10 @@
           .contacts__item
             .contacts__icon
               +svg('phone')
-            a(href="tel:+380443649475") +38 (044) 364 94 75
+            div
+              a(href="tel:+380443649475") +38 (044) 364 94 75
+              a(href="tel:+380504463562") +38 (050) 446 35 62
+              a(href="tel:+380504198507") +38 (050) 419 85 07
           .contacts__item
             .contacts__icon
               +svg('mail')
@@ -31,11 +34,17 @@
       //begin footer__copyright
       .footer__copyright.copyright
         .copyright__row
-          a(href="https://drive.google.com/file/d/1djmfaciKEGsZOdTMdcTjev40zDr9ohHH/view" target='_blank').copyright__link
+          a(href="assets/pdf/Viamedia_portfolio_2019.pptx").copyright__link
             +svg('download')
           .copyright__text
             span Структура властності
             span ТОВ «Віа Медіа» за 2019 рік
+        .copyright__row
+          a(href="assets/pdf/Viamedia_portfolio_2020.pptx").copyright__link
+            +svg('download')
+          .copyright__text
+            span Структура властності
+            span ТОВ «Віа Медіа» за 2020 рік
       //end footer__copyright
     //end footer__right
 //end footer

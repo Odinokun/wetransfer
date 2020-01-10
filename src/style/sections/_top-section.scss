@@ -1,11 +1,38 @@
 .top-section {
-  background-image: url('../img/bg-top-section.png');
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: cover;
-
-  @include max(1200) {
-    background-image: url('../img/bg-top-section-1200.png');
+  position: relative;
+  &::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+  background-color: #673a8f;
+  }
+  &::after {
+    content: '';
+    width: 100%;
+    max-width: 1391px;
+    min-height: 630px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  background-image: url('../img/bg-top-logo.png');
+    @include max(940) {
+      min-height: 550px;
+    }
+    @include max(760) {
+      min-height: 450px;
+    }
+    @include max(555) {
+      min-height: 300px;
+    }
   }
   .container {
     display: flex;
@@ -16,6 +43,17 @@
     padding-top: 100px;
     padding-bottom: 180px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    @include max(940) {
+      min-height: 550px;
+    }
+    @include max(760) {
+      min-height: 450px;
+    }
+    @include max(555) {
+      min-height: 300px;
+    }
   }
 }
 

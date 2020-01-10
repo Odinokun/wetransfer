@@ -11,6 +11,8 @@ module.exports = function () {
     }
     else {
       $('#aside').removeClass('active');
+      $('#aside').removeClass('open');
+      $('#aside__burger').removeClass('open');
     }
   }
 
@@ -23,5 +25,16 @@ module.exports = function () {
   });
 
   // end aside
+
+  // begin aside menu
+  $('#aside__burger, .aside-nav__item, .main').on('click', function () {
+    $('#aside').toggleClass('open');
+    $('#aside__burger').toggleClass('open');
+  });
+  $('.main').on('click', function () {
+    $('#aside').removeClass('open');
+    $('#aside__burger').removeClass('open');
+  });
+  // end aside menu
 
 };

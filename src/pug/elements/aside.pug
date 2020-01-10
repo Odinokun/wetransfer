@@ -1,6 +1,10 @@
 //begin aside
 aside.aside#aside
   .aside__burger#aside__burger
+    .aside__burger-icon.aside__burger-icon--open
+      +svg('aside-burger')
+    .aside__burger-icon.aside__burger-icon--close
+      +svg('aside-burger-close')
   a(href="/").aside__logo
     img(src="assets/img/logo.png" alt="Viamedia")
   nav.aside__nav.aside-nav

@@ -3,9 +3,12 @@
     padding-top: 120px;
     padding-bottom: 137px;
 
-    @include max(640) {
+    @include max(940) {
       padding-top: 80px;
       padding-bottom: 80px;
+    }
+    @include max(860) {
+      padding-top: 20px;
     }
   }
 }

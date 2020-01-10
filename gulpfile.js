@@ -36,7 +36,7 @@ $.gulp.task('default', $.gulp.series(
     'copy:js',
     'copy:css',
     'copy:fonts',
-    'copy:php',
+    'copy:pdf',
     'copy:video'
   ),
   $.gulp.parallel(

@@ -11,7 +11,7 @@
   &.active {
     transform: translate(-100%, -50%);
   }
-  &:hover {
+  &.open {
     transform: translate(0, -50%);
   }
 }
@@ -20,13 +20,60 @@
   position: absolute;
   top: 0;
   right: -40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 160px;
   cursor: pointer;
+  user-select: none;
+  outline: none;
   background-image: url('../img/aside-burger.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
+
+  user-focus: none;
+  @include max(940) {
+    right: -25px;
+    width: 25px;
+    height: 100px;
+  }
+  &.open {
+    .aside__burger-icon--open {
+      display: none;
+    }
+    .aside__burger-icon--close {
+      display: block;
+    }
+  }
+}
+
+.aside__burger-icon {
+  flex: none;
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+
+  @include max(940) {
+    width: 15px;
+    height: 13px;
+  }
+  svg {
+    fill: #fff;
+    width: 20px;
+    height: 18px;
+
+    @include max(940) {
+      width: 15px;
+      height: 13px;
+    }
+  }
+}
+
+.aside__burger-icon--close {
+  display: none;
 }
 
 .aside__logo {
