@@ -10,6 +10,9 @@
     @include max(860) {
       padding-top: 20px;
     }
+    @include max(555) {
+      padding-top: 80px;
+    }
   }
 }
 

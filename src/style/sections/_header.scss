@@ -34,11 +34,15 @@
     bottom: 0;
     left: 0;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
-    padding-top: 50px;
     transition: transform .5s ease-in-out;
     transform: translateX(-100%);
     background-color: $violet;
+    background-image: url('../img/bg-menu.png');
+    background-repeat: repeat;
+    background-position: 5px 5px;
+    background-size:75px 75px;
     &.active {
       transform: translateX(0);
     }
@@ -71,10 +75,11 @@
   @include max(860) {
     font-size: 24px;
     letter-spacing: 1px;
+    line-height: 55px;
   }
-  @include max(640) {
-    font-size: 20px;
-  }
+  //@include max(640) {
+  //  font-size: 20px;
+  //}
   &.active,
   &:hover {
     font-weight: 600;
